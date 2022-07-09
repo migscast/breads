@@ -26,8 +26,8 @@ function Edit ({bread, index}) {
             type="checkbox"
             name="hasGluten"
             id="hasGluten"
-            defaultChecked
-            defaultValue={bread.hasGluten}
+            defaultChecked = {bread.hasGluten}
+            
           />
           <br />
           <input type="submit"/>
