@@ -13,6 +13,13 @@ function New () {
         id="name"
         required
         />
+        <label htmlFor="image">Image</label>
+        <input
+        type="text"
+        name="image"
+        id="image"
+        />
+        
         <label htmlFor="hasGluten">Has Gluten</label>
         <input
         type="checkbox"
