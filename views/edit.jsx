@@ -14,6 +14,7 @@ function Edit ({bread, index}) {
             required
             defaultValue={bread.name}
           />
+
           <label htmlFor="image">Image</label>
           <input
             type="text"
@@ -21,14 +22,25 @@ function Edit ({bread, index}) {
             id="image"
             defaultValue={bread.image}
             />
+
           <label htmlFor="hasGluten">Has Gluten?</label>
           <input
             type="checkbox"
             name="hasGluten"
             id="hasGluten"
-            defaultChecked = {bread.hasGluten}
-            
+            defaultChecked = {bread.hasGluten}            
           />
+
+          <label htmlFor='baker'>Baker</label>
+            <select name='baker' id='baker' defaultValue={bread.baker}>
+              <option value = 'Dora'>Dora</option>
+              <option value = 'Alejandro'>Alejandro</option>
+              <option value = 'Alyssa'>Alyssa</option>
+              <option value = 'Mariely'>Mariely</option>
+              <option value = 'Seryna'>Seryna</option>
+              <option value = 'Yolanda'>Yolanda</option>
+              <option value = 'Mari'>Mari</option>
+            </select>
           <br />
           <input type="submit"/>
         </form>

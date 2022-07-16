@@ -13,6 +13,7 @@ function New () {
         id="name"
         required
         />
+        
         <label htmlFor="image">Image</label>
         <input
         type="text"
@@ -27,12 +28,24 @@ function New () {
         id="hasGluten"
         defaultChecked
         />
+
+        <label htmlFor='baker'>Baker</label>
+        <select name='baker' id='baker'>
+          <option value = 'Dora'>Dora</option>
+          <option value = 'Alejandro'>Alejandro</option>
+          <option value = 'Alyssa'>Alyssa</option>
+          <option value = 'Mariely'>Mariely</option>
+          <option value = 'Seryna'>Seryna</option>
+          <option value = 'Yolanda'>Yolanda</option>
+          <option value = 'Mari'>Mari</option>
+        </select>
         <br />
         <input type="submit"/>
         </form>
         <div className="backButton">
         <a href="/breads"><button>Go back to the index</button></a>
         </div>
+
 
 
       </Default>
