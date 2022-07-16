@@ -13,11 +13,12 @@ function Index ({breads, title})  {
         <ul>
           {
             breads.map((bread, index)=> {
-              return (<li key={index}>
+              return (<ul key={index}>
                 <a href = {`/breads/${bread.id}`}>
                     {bread.name}
                 </a>
-              </li>)
+                <li>{bread.getBakedBy()}</li>
+              </ul>)
             }) 
           }
         </ul>
