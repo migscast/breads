@@ -78,6 +78,9 @@ breads.put('/:id', (req, res) => {
   .then(updatedBread => {
     console.log(updatedBread)
     res.redirect(`/breads/${req.params.id}`)
+    .catch(err =>{
+      res.render('error404')
+    })
   })
   //res.redirect(`/breads/${req.params.arrayIndex}`)
 })
