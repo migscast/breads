@@ -1,7 +1,7 @@
 const React = require('react')
 const Default = require('./layouts/Default')
 
-function New () {
+function New ({bakers}) {
     return (
       <Default>
         <h2>Add a new bread</h2>
@@ -31,13 +31,11 @@ function New () {
 
         <label htmlFor='baker'>Baker</label>
         <select name='baker' id='baker'>
-          <option value = 'Dora'>Dora</option>
-          <option value = 'Alejandro'>Alejandro</option>
-          <option value = 'Alyssa'>Alyssa</option>
-          <option value = 'Mariely'>Mariely</option>
-          <option value = 'Seryna'>Seryna</option>
-          <option value = 'Yolanda'>Yolanda</option>
-          <option value = 'Mari'>Mari</option>
+          {bakers.map((baker) => {
+            return(
+              <option value= {baker.id} key={baker.id}>{baker.name}</option>
+            )
+          })}
         </select>
         <br />
         <input type="submit"/>
